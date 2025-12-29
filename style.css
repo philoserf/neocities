@@ -1,25 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap");
+
 body {
   background-color: white;
   color: black;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    avenir next,
-    avenir,
-    segoe ui,
-    helvetica neue,
-    Adwaita Sans,
-    Cantarell,
-    Ubuntu,
-    roboto,
-    noto,
-    helvetica,
-    arial,
-    sans-serif;
+  font-family: Lexend, system-ui, sans-serif;
   line-height: 1.6;
   max-width: 65ch;
   margin: 2rem auto;
   padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Inter, system-ui, sans-serif;
 }
 
 h1 {
@@ -38,6 +35,12 @@ h3 {
 strong {
   color: #1a1a1a;
   letter-spacing: 0.02em;
+}
+
+header strong {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
 }
 
 em {
