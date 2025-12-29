@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: "3"
+
+tasks:
+  default:
+    desc: Check Neocities info and git status
+    cmds:
+      - neocities info
+      - git status
+
+  setup:
+    cmds:
+      - bundle install
+  format:
+    cmds:
+      - prettier -wu .
+
+  push:
+    desc: Deploy entire directory to Neocities
+    cmds:
+      - neocities push .
+
+  list:
+    desc: List files currently on Neocities site
+    cmds:
+      - neocities list
+
+  info:
+    desc: View Neocities site statistics
+    cmds:
+      - neocities info
+
+  upload:
+    desc: Upload specific file(s) to Neocities (usage - task upload -- file1 file2)
+    cmds:
+      - neocities upload {{.CLI_ARGS}}
+
+  delete:
+    desc: Delete file(s) from Neocities site (usage - task delete -- file1 file2)
+    cmds:
+      - neocities delete {{.CLI_ARGS}}
