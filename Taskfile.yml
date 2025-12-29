@@ -17,9 +17,15 @@ tasks:
       - prettier -wu .
 
   push:
-    desc: Deploy entire directory to Neocities
+    desc: Deploy site files to Neocities
     cmds:
-      - neocities push .
+      - neocities upload index.html not_found.html style.css robots.txt
+
+  deploy:
+    desc: Format and deploy site to Neocities
+    cmds:
+      - task: format
+      - task: push
 
   list:
     desc: List files currently on Neocities site
