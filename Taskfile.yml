@@ -5,6 +5,7 @@ version: "3"
 tasks:
   default:
     desc: Check Neocities info and git status
+    deps: [setup]
     cmds:
       - neocities info
       - git status
