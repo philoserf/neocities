@@ -14,7 +14,7 @@ tasks:
       - bundle install
   format:
     cmds:
-      - prettier -wu .
+      - bunx prettier --write --ignore-unknown .
 
   push:
     desc: Deploy site files to Neocities
