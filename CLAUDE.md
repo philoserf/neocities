@@ -26,4 +26,4 @@ task delete -- <files>   # delete from Neocities
 - Deployed files are explicitly enumerated in the `push` task: `index.html`, `not_found.html`, `style.css`, `robots.txt`. **Any new file intended for deployment must be added to that list** — `push` does not glob.
 - Stylesheet uses absolute paths (`/style.css`) so it resolves on both `/` and `/not_found.html`.
 - Fonts (EB Garamond, Inter) loaded via `@import` from Google Fonts at the top of `style.css`.
-- Deployment auth: the `neocities` gem reads credentials from its own config (`~/.neocities/config`) — not committed here.
+- Deployment auth: `NEOCITIES_API_KEY` env var, or the gem's stored API key at `~/Library/Application Support/neocities/config.json`. First authenticated CLI call prompts for sitename + password and writes the key.
