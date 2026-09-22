@@ -18,7 +18,7 @@ Other targets:
 | ------------------------ | -------------------------------- |
 | `task`                   | `neocities info` + `git status`  |
 | `task setup`             | `bundle install`                 |
-| `task format`            | Prettier (via `bunx`)            |
+| `task format`            | Prettier (from the `Brewfile`)   |
 | `task push`              | Upload the listed files          |
 | `task list`              | List files currently on the site |
 | `task info`              | Site statistics                  |
