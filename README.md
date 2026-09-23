@@ -1,5 +1,7 @@
 # neocities
 
+![Status: Active](https://img.shields.io/badge/Status-Active-blue.svg)
+
 A personal brochure site on [Neocities](https://neocities.org), published at <https://philoserf.neocities.org>.
 
 Static HTML and CSS — no JavaScript, no build step. Deployed with the [`neocities`](https://rubygems.org/gems/neocities) Ruby gem, orchestrated by [Task](https://taskfile.dev).
