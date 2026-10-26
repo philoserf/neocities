@@ -15,7 +15,7 @@ tasks:
       - bundle install
   format:
     cmds:
-      - prettier --write --ignore-unknown .
+      - bun fmt --ignore-unknown .
 
   push:
     desc: Deploy site files to Neocities

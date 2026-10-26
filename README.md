@@ -12,20 +12,20 @@ Static HTML and CSS — no JavaScript, no build step. Deployed with the [`neocit
 task deploy
 ```
 
-Formats files with Prettier, then uploads the four files listed in `Taskfile.yml` under the `push` target. New files intended for deployment must be added to that list — there is no glob.
+Formats files with `bun fmt`, then uploads the four files listed in `Taskfile.yml` under the `push` target. New files intended for deployment must be added to that list — there is no glob.
 
 Other targets:
 
-| Task                     | Action                           |
-| ------------------------ | -------------------------------- |
-| `task`                   | `neocities info` + `git status`  |
-| `task setup`             | `bundle install`                 |
-| `task format`            | Prettier (from the `Brewfile`)   |
-| `task push`              | Upload the listed files          |
-| `task list`              | List files currently on the site |
-| `task info`              | Site statistics                  |
-| `task upload -- <files>` | Upload specific files            |
-| `task delete -- <files>` | Delete files from the site       |
+| Task                     | Action                              |
+| ------------------------ | ----------------------------------- |
+| `task`                   | `neocities info` + `git status`     |
+| `task setup`             | `bundle install`                    |
+| `task format`            | `bun fmt` (Bun from the `Brewfile`) |
+| `task push`              | Upload the listed files             |
+| `task list`              | List files currently on the site    |
+| `task info`              | Site statistics                     |
+| `task upload -- <files>` | Upload specific files               |
+| `task delete -- <files>` | Delete files from the site          |
 
 ## Credentials
 

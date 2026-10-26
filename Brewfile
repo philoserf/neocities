@@ -1,3 +1,3 @@
+brew "bun"
 brew "go-task"
-brew "prettier"
 brew "ruby"
