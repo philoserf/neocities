@@ -12,6 +12,7 @@ Static HTML/CSS site deployed to Neocities. Task (`Taskfile.yml`) wraps the `neo
 task            # default → bundle install, then neocities info + git status
 task setup      # bundle install
 task format     # bun fmt --ignore-unknown . (bun from the Brewfile)
+task check      # bun fmt --check: the gate pr-cycle.sh runs before a merge
 task push       # upload the four deployed files
 task deploy     # format, then push (primary publish workflow)
 task list       # list files currently on Neocities

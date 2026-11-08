@@ -17,6 +17,11 @@ tasks:
     cmds:
       - bun fmt --ignore-unknown .
 
+  check:
+    desc: Check formatting without rewriting (the PR gate)
+    cmds:
+      - bun fmt --check --ignore-unknown .
+
   push:
     desc: Deploy site files to Neocities
     cmds:
