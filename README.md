@@ -16,16 +16,17 @@ Formats files with `bun fmt`, then uploads the four files listed in `Taskfile.ym
 
 Other targets:
 
-| Task                     | Action                              |
-| ------------------------ | ----------------------------------- |
-| `task`                   | `neocities info` + `git status`     |
-| `task setup`             | `bundle install`                    |
-| `task format`            | `bun fmt` (Bun from the `Brewfile`) |
-| `task push`              | Upload the listed files             |
-| `task list`              | List files currently on the site    |
-| `task info`              | Site statistics                     |
-| `task upload -- <files>` | Upload specific files               |
-| `task delete -- <files>` | Delete files from the site          |
+| Task                     | Action                               |
+| ------------------------ | ------------------------------------ |
+| `task`                   | `neocities info` + `git status`      |
+| `task setup`             | `bundle install`                     |
+| `task format`            | `bun fmt` (Bun from the `Brewfile`)  |
+| `task check`             | `bun fmt --check`, without rewriting |
+| `task push`              | Upload the listed files              |
+| `task list`              | List files currently on the site     |
+| `task info`              | Site statistics                      |
+| `task upload -- <files>` | Upload specific files                |
+| `task delete -- <files>` | Delete files from the site           |
 
 ## Credentials
 
